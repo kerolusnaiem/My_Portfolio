@@ -14,6 +14,9 @@
            <!-- Main css style-->
       <link rel="stylesheet" href="css/style.css">     
       <link rel="stylesheet" href="https://storyset.com/work">
+           <!-- Aos.js library -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      
 
 </head>
 <body>
@@ -21,7 +24,7 @@
   <header id="home">
     <div class="navbar">
         <nav>
-            <a href="#home" id="logo">Kerolus N<span class="leter">@</span>iem</a>
+             <a href="#home" id="logo">Kerolus N<span class="leter">@</span>iem</a>
              <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -35,7 +38,8 @@
         <div class="content-text">
             <p><span class="text-prim">Hello , My name is</span></p>
             <h1>Kerolus Naiem</h1>
-            <p class="title">Frontend Web Developer</p>
+            <h2 id="typing"></h2>       
+             <!-- <p class="title">Frontend Web Developer</p> -->
             <div class="social">
                 <a href="https://www.facebook.com/keroulos.naeim">
                     <i class="fa-brands fa-facebook"></i>
@@ -58,7 +62,31 @@
     <!-- End Header  -->
  <main>
     <!-- Start About  -->
-    <section id="about">
+     <section id="about" data-aos="fade-up">
+    <div class="container">
+        <h2 data-aos="fade-down">About Me</h2>
+        <hr>
+        <div class="about-content">
+            <div class="col-1" data-aos="fade-right">
+                <h3>I'm <span class="text-prim">Kerolus Naiem,</span>a Frontend developer</h3>
+                    <p>i'm a front-end web developer with a strong passion for creating visually appealing 
+                        and user-friendly web applications. i am very passionate about improving
+                        my coding skills & developing websites.
+                    </p>
+                    <p>I have also gained a solid foundation in HTML,CSS and javascript, i am always
+                        eager to learn new technologies and techniques to enhance my skills.
+                    </p>
+            </div>
+            <div class="col-2" data-aos="fade-left">
+                <p><b>Age:</b>27</p>
+                <p><b>Email:</b> kerolusnaiem19@gmail.com</p>
+                <p><b>place:</b> Cairo</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- <section id="about">
         <div class="container">
             <h2>About Me</h2>
             <hr>
@@ -80,14 +108,34 @@
                 </div>
             </div>
         </div>
-    </section>  
+    </section>   -->
     <!-- End About  -->
      <!-- Start Skills  -->
-     <section id="skills">
+
+     <section id="skills" data-aos="fade-up">
+    <div class="container">
+        <h2 data-aos="zoom-in">
+            <i class="fa-solid fa-laptop-code"></i> Skills & <span class="text-prim">Abilities</span>
+        </h2>
+        <hr>
+        <div class="skills-content">
+            <div class="row">
+                <div class="item" data-aos="zoom-in"><img src="images/html.png" alt="html"><p>HTML 5</p></div>
+                <div class="item" data-aos="zoom-in" data-aos-delay="200"><img src="images/css3.png" alt="css"><p>Css 3</p></div>
+                <div class="item" data-aos="zoom-in" data-aos-delay="400"><img src="images/javascript-logo-javascript-icon-transparent-free-png.webp" alt="javascript"><p>Javascript</p></div>
+                <div class="item" data-aos="zoom-in" data-aos-delay="600"><img src="images/bootstrap.png" alt="Bootstrap"><p>Bootstrap</p></div>
+                <div class="item" data-aos="zoom-in" data-aos-delay="800"><img class="react" src="images/react.png" alt="react"><p>React</p></div>
+                <div class="item" data-aos="zoom-in" data-aos-delay="1000"><img src="images/github.png" alt="github"><p>Github</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- <section id="skills">
         <div class="container">
             <h2>
                 <i class="fa-solid fa-laptop-code"></i> Skills &  <span
-                class="text-prim">Abilities</span>
+                 class="text-prim">Abilities</span>
             </h2>
             <hr>
             <div class="skills-content">
@@ -119,10 +167,53 @@
                 </div>
             </div>
         </div>
-     </section> 
+        
+     </section>  -->
     <!-- End Skills  -->
     <!-- Start Services  -->
-     <section id="services">
+     <section id="services" data-aos="fade-up">
+    <div class="container">
+        <div class="heading" data-aos="fade-down">
+            <img src="images/services.png" alt="Services">
+            <h2>My <span class="text-prim">Services</span></h2>
+        </div>
+        <div class="row">
+            <div class="item" data-aos="flip-left">
+                <img src="images/Development-cuate.png" alt="web development">
+                <h3>Web Development</h3>
+                <p>I can build a website by using HTML,CSS, and Javascript.</p>
+            </div>
+
+            <div class="item" data-aos="flip-left" data-aos-delay="200">
+                <img src="images/Responsive-cuate (1).png" alt="responsive design">
+                <h3>Responsive Design</h3>
+                <p>Your website will be 100% responsive for all devices,Tablets and smart phones.</p>
+            </div>
+            <div class="item" data-aos="flip-left" data-aos-delay="400">
+                <img src="images/Creation process-cuate (1).png" alt="creative design">
+                <h3>Creative Design</h3>
+                <p>I can edit your current website by adding a new content to make it much better.</p>
+            </div>
+            <div class="item" data-aos="flip-left" data-aos-delay="600">
+                <img src="images/idea.png" alt="web idea">
+                <h3>Web Idea</h3>
+                <p>I could turn your ideas into a real projects with high quality.</p>
+            </div>
+            <div class="item" data-aos="flip-left" data-aos-delay="800">
+                <img src="images/Interior design-pana (1).png" alt="retouch">
+                <h3>Retouch</h3>
+                <p>I can help you by redesign your current website to looks much better.</p>
+            </div>
+            <div class="item" data-aos="flip-left" data-aos-delay="1000">
+                <img src="images/Icon design-bro.png" alt="support">
+                 <h3>Support</h3>
+                 <p>Support is available if you want to make any changes for your website after dilvering it.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- <section id="services">
         <div class="container">
             <div class="heading">
                 <img src="images/services.png" alt="Services">
@@ -162,10 +253,63 @@
                 </div>
             </div>
         </div>
-     </section>
+     </section> -->
     <!-- End Services  -->
-    <!-- Start Portfolio  -->
-     <section id="projects">
+          <!-- Start Projects   -->
+
+          <section id="projects" data-aos="fade-up">
+            <div class="container">
+              <h2 data-aos="fade-down">
+                <i class="fa-solid fa-laptop-code"></i> My<span class="text-prim"> Projects</span></h2>
+             <hr>
+             <div class="row">
+                <div class="item" data-aos="fade-up">
+                    <img src="images/design1.jpg" alt="design 1">
+                    <div class="item-content">
+                    <h3>Sport Shop</h3>
+                    <a href="https://design-shoes.vercel.app/" target="_blank">Visite Website</a>
+                  </div>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/courses.jpg" alt="page 1">
+                     <div class="item-content">
+                    <h3>courses Web</h3>
+                    <a href="https://design-shoes-gn6a.vercel.app/" target="_blank">Visite Website</a>
+                  </div>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/labtop.jpg" alt="design 2">
+                    <div class="item-content">
+                    <h3>labtop store</h3>
+                    <a href="https://labtop-store-dvnz.vercel.app/" target="_blank">Visite Website</a>
+                  </div>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="600">
+                    <img src="images/page2.jpg" alt="restaurant">
+                     <div class="item-content">
+                    <h3>Italian Restaurant</h3>
+                    <a href="https://italian-restaurant-3hxp.vercel.app/" target="_blank">Visite Website</a>
+                  </div>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="800">
+                    <img src="images/Form - Personal - Microsoft​ Edge 30_09_2025 01_36_18 م.png" alt="design 3">
+                    <div class="item-content">
+                    <h3>Form login</h3>
+                    <a href="https://web-design-company-c3e9.vercel.app/" target="_blank">Visite Website</a>
+                  </div>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="1000">
+                    <img src="images/calculator.jpg" alt="page 3">
+                    <div class="item-content">
+                    <h3>Calculator</h3>
+                    <a href="https://calculator-three-kappa-65.vercel.app/" target="_blank">Visite Website</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+</section>
+
+      <!-- <section id="projects">
         <div class="container">
             <h2>
                 <i class="fa-solid fa-laptop-code"></i> My<span
@@ -173,55 +317,71 @@
             </h2>
             <hr>
             <div class="row">
-                 <!-- item 1  -->
+                   item 1 
                <div class="item">
                   <img src="images/design1.jpg" alt="design 1">
-                  <div class="item-content">
+                   <div class="item-content">
                     <h3>Sport Shop</h3>
-                    <a href="" target="_blank">Visite Website</a>
+                    <a href="https://design-shoes.vercel.app/" target="_blank">Visite Website</a>
                   </div>
                </div>   
                <div class="item">
                   <img src="images/courses.jpg" alt="page 1">
                   <div class="item-content">
                     <h3>courses Web</h3>
-                    <a href="" target="_blank">Visite Website</a>
+                    <a href="https://design-shoes-gn6a.vercel.app/" target="_blank">Visite Website</a>
                   </div>
                </div>   
                <div class="item">
                   <img src="images/labtop.jpg" alt="design 2">
                   <div class="item-content">
                     <h3>labtop store</h3>
-                    <a href="" target="_blank">Visite Website</a>
+                    <a href="https://labtop-store-dvnz.vercel.app/" target="_blank">Visite Website</a>
                   </div>
                </div>   
                <div class="item">
                   <img src="images/page2.jpg" alt="restaurant">
                   <div class="item-content">
                     <h3>Italian Restaurant</h3>
-                    <a href="" target="_blank">Visite Website</a>
+                    <a href="https://italian-restaurant-3hxp.vercel.app/" target="_blank">Visite Website</a>
                   </div>
                </div>   
                <div class="item">
                   <img src="images/Form - Personal - Microsoft​ Edge 30_09_2025 01_36_18 م.png" alt="design 3">
                   <div class="item-content">
                     <h3>Form login</h3>
-                    <a href="" target="_blank">Visite Website</a>
+                    <a href="https://web-design-company-c3e9.vercel.app/" target="_blank">Visite Website</a>
                   </div>
                </div>   
                <div class="item">
-                  <img src="images/page1.jpg" alt="page 3">
+                  <img src="images/calculator.jpg" alt="page 3">
                   <div class="item-content">
-                    <h3>Web design company</h3>
-                    <a href="" target="_blank">Visite Website</a>
+                    <h3>Calculator</h3>
+                    <a href="https://calculator-three-kappa-65.vercel.app/" target="_blank">Visite Website</a>
                   </div>
                </div>   
             </div>
         </div>
-     </section>
-    <!-- End Portfolio  -->
+     </section>  -->
+    <!-- End Projects 
      <!-- Start Contact  -->
-      <section id="contact">
+
+     <section id="contact" data-aos="fade-up">
+    <div class="container">
+        <h2 data-aos="fade-down"><i class="fa-solid fa-headset"></i> Get In <span class="text-prim">Touch</span></h2>
+        <div class="row" data-aos="fade-right">
+            <img src="images/call1.png" alt="get in touch">
+            <form action="https://formsubmit.co/kerolusnaiem19@gmail.com" method="POST" data-aos="fade-left">
+                <input type="text" name="Name" id="Name" placeholder="Name" required>
+                <input type="email" name="Email" id="Email" placeholder="Email" required>
+                <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message...." required></textarea>
+                <button type="submit" class="btn-prim">Submit</button>
+            </form>
+        </div>
+    </div>
+</section> 
+
+      <!-- <section id="contact">
         <div class="container">
             <h2>
                 <i class="fa-solid fa-headset"></i> Get In <span class="text-prim">Touch</span>
@@ -236,7 +396,7 @@
                 </form>
             </div>
         </div>
-      </section>
+      </section> -->
      <!-- End Contact -->
  </main>  
       <!-- Start Footer -->
@@ -247,6 +407,17 @@
       </a>
  </footer>      
       <!-- End Footer -->
+       <script src="js/main.js"></script>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+       AOS.init({
+       duration: 3000,
+        once: true
+     });
+   </script>
+
+
 </body>
 </html>
 
